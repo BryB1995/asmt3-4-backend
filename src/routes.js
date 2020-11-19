@@ -7,20 +7,14 @@ module.exports.register = (app, database) => {
     });
 
 
-    app.get('/api/emp', async (req, res) => {
+    app.get('/api', async (req, res) => {
         console.log("=================");
         let query;
-        if (req.query.id) {
-            let _id = req.query.id;
-            query = database.query(
-                'select * from course where id = ?',
-                [_name]
-            );
-        } else {
+ 
             query = database.query(
                 'SELECT * FROM course'
             );
-        }
+        
         console.log(query);
         const emps = await query;
 
