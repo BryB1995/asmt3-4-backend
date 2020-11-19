@@ -55,6 +55,17 @@ module.exports.register = (app, database) => {
         res.status(200).send('Course added successfully!').end();
     });
 
+    app.post('/api/emp', async (req, res) => {
+        let _id = req.body.id;
+        let _description = req.body.description;
+        const query = database.query(
+            'REPLACE INTO course(description) SELECT description FROM couse WHERE id = ? values (?)',
+            [_id, _description]
+        );
+        const emps = await query;
+        res.status(200).send('Course updated successfully').end();
+    });
+
 
 
 };
