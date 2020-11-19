@@ -18,7 +18,7 @@ const startServer = async _ => {
   const routes = require('./src/routes');
   routes.register(app, db);
 
-  const PORT = process.env.PORT || 3306;
+  const PORT = process.env.DB_PORT || 3306;
   const server = app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
     console.log('Press Ctrl+C to quit.');
