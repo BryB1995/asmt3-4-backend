@@ -1,0 +1,11 @@
+{
+  "name": "asmt-3-4-backend",
+  "version": "1.0.0",
+  "description": "asmt 3 4 backend",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
