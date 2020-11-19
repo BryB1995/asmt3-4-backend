@@ -13,7 +13,6 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs12
-instance_class: e2
-script: auto
+
 
 # [END gae_quickstart_yaml]
