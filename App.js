@@ -20,7 +20,7 @@ const startServer = async _ => {
   //console.log(routes);
   routes.register(app, db);
 
-  const PORT = process.env.PORT || 3306;
+  const PORT = process.env.PORT || 5050;
   const server = app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
     console.log('Press Ctrl+C to quit.');
