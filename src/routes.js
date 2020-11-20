@@ -18,7 +18,7 @@ module.exports.register = (app, database) => {
         console.log(query);
         const emps = await query;
 
-        res.status(8008).send(JSON.stringify(emps)).end();
+        res.status(200).send(JSON.stringify(emps)).end();
     });
 
 

@@ -15,7 +15,7 @@ const startServer = async _ => {
   //console.log(process.env.DB_NAME);
   const database = require("./src/database");
   let db = await database.setup();
-console.log(db);
+//console.log(db);
   const routes = require('./src/routes');
   //console.log(routes);
   routes.register(app, db);
